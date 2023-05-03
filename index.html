@@ -8,90 +8,279 @@
         <style>
   body {
   }
+            div#navbar {
+                background-color: red;
+                overflow: auto;
+                white-space: nowrap;
+                position: sticky;
+                margin-bottom: 0%;
+                width: 100%;
+                }
+
+            div#navbar a {
+                float:inherit;
+                display:inline-block;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                text-decoration: none;
+                font-size: xx-large;
+                }
+
+            div#navbar a:hover {
+                background-color: red;
+                color:yellow;
+                }
+            div#navbar a:active {
+                background-color: yellow;
+                color:red;
+            }
+            .sticky {
+                position: fixed;
+                top: 0;
+                width:100%;
+            }
   main {
     margin-bottom: 0%;
   }
-  .floating-menu {
-    font-family: sans-serif;
-    background: red;
-    padding: 5px;;
-    width: 11%;
-    z-index: 100;
-    position: fixed;
-  }
-  .floating-menu a, 
-  .floating-menu h3 {
-    font-size: 0.82em;
-    display: block;
-    margin: 0 0.5em;
-    color: yellow;
-  }
+            .OpeningTimes {
+                margin-top:40px;
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: bold;
+                font-size: 170%;
+            }
+            .Day {
+                text-align: right;
+                font-weight:bold;
+            }
+            .OpenTime{
+                text-align: left;
+                font-weight:bold;
+                color:green;
+            }
+            .CloseTime {
+                font-weight:bold;
+                text-align:center;
+                color:red;
+            }
+            .ItDe {
+                color:red;
+                font-style:italic;
+                font-weight: 500;
+            }
+            .ItNu {
+                text-align: right;
+                padding-right:10px;
+            }
+            .It {
+                font-weight:bold;
+                overflow-x:hidden; 
+            }
+            .ItPr {
+                letter-spacing: 0.5px;
+                text-align: left;
+                color:blue;
+                font-weight:bold;
+            }
+            .veg {
+                color:green;
+                
+            }
+            #menu {
+                text-align: left;
+                align-content: center;
+                font-size:medium;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .setmenus {
+                text-align: left;
+                align-content: center;
+                font-size:medium;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            td {
+                padding-bottom: 20px;
+            }
+            header {
+                text-align: center;
+                font-size:170%;
+                padding: 10px;
+                background-color:red;
+                color: yellow;
+            }
+            #BusinessName {
+                width:100%;
+                padding:2%;
+                box-sizing: border-box;
+            }
+            #BusinessNumber {
+                width: 50%;
+            }
+            #location, #location:active, #location:visited{
+                text-decoration: none;
+                color: yellow;
+            }
+            #location:hover {
+                color: orange;
+            }
+            ol {
+                margin-left:10%;
+            }
+            h2 {
+                text-align: center;
+                }
+            h3 {
+                margin-left: 8%;
+            }
+            h4 {
+                text-align: center;
+                color: 
+            }
+            th {
+                padding-bottom:15px;
+                text-decoration: underline;
+            }
+            .info {
+                text-align: center;
+            }
 </style>
     </head>
-    <body style="background-color: rgb(240,240,141)">
-        <nav class="floating-menu">
+    <body style="background-color: #feeaef">
+        
+        
+        
+        <header>
+            <img id="BusinessName"; src="https://user-images.githubusercontent.com/111469383/234271439-42eef6a2-7a5e-4331-b4c4-cb456859ec8d.png">
+            <a href="tel:01424718889"><img id="BusinessNumber"; src="https://user-images.githubusercontent.com/111469383/234271822-3e366e1d-ab6d-4746-863d-2e92656516e7.png"></a>
+            <a id="location"; href="https://www.google.com/maps/place/Silverhill+Chinese+Takeaway,+3+Sedlescombe+Rd+N,+Hastings,+Saint+Leonards-on-sea+TN37+7DA/@50.8678103,0.5559596,15z/data=!4m6!3m5!1s0x47df1a9ef7ebb935:0x9be4ebc58ffc4a74!8m2!3d50.8678103!4d0.5559596!16s%2Fg%2F1tmxvwg2"; target="_blank"><h4 ID="address">3 Sedlescombe Road North,<br>St. Leonards-on-Sea, East Sussex, TN37 7DA</h4></a>
+        </header>
+        
+        
+        
+        <div id="navbar">
             <b>
-            <a href="#STARTERS">STARTERS</a><br>
-            <a href="#SPARERIBS">SPARE RIBS</a><br>
-            <a href="#SOUPS">SOUPS</a><br>
-            <a href="#KINGPRAWNDISHES">KING PRAWN</a><br>
-            <a href="#SQUIDDISHES">SQUID</a><br>
-            <a href="#DUCKDISHES">DUCK</a><br>
-            <a href="#CHICKENDISHES">CHICKEN</a><br>
-            <a href="#BEEFDISHES">BEEF</a><br>
-            <a href="#LAMBDISHES">LAMB</a><br>
-            <a href="#PORKDISHES">PORK</a><br>
-            <a href="#CURRYDISHES">CURRY</a><br>
-            <a href="#CHOPSUEYDISHES">CHOP SUEY</a><br>
-            <a href="#FOOYUNGDISHES">FOO YUNG</a><br>
-            <a href="#OMELETTE&ENGLISHDISHES">OMELETTE & ENGLISH DISHES</a><br>
-            <a href="#VEGETABLEDISHES">VEGETABLE DISHES</a><br>
-            <a href="#BEANCURDDISHES">BEAN CURD DISHES</a><br>
-            <a href="#RICEDISHES">RICE DISHES</a><br>
-            <a href="#NOODLEDISHES">NOODLE DISHES</a><br>
-            <a href="#OTHERS">OTHERS</a><br>
+            <a href="#STARTERS">STARTERS</a>
+            <a href="#SPARERIBS">SPARE RIBS</a>
+            <a href="#SOUPS">SOUPS</a>
+            <a href="#KINGPRAWNDISHES">KING PRAWN</a>
+            <a href="#SQUIDDISHES">SQUID</a>
+            <a href="#DUCKDISHES">DUCK</a>
+            <a href="#CHICKENDISHES">CHICKEN</a>
+            <a href="#BEEFDISHES">BEEF</a>
+            <a href="#LAMBDISHES">LAMB</a>
+            <a href="#PORKDISHES">PORK</a>
+            <a href="#CURRYDISHES">CURRY</a>
+            <a href="#CHOPSUEYDISHES">CHOP SUEY</a>
+            <a href="#FOOYUNGDISHES">FOO YUNG</a>
+            <a href="#OMELETTE&ENGLISHDISHES">OMELETTE & ENGLISH DISHES</a>
+            <a href="#VEGETABLEDISHES">VEGETABLE DISHES</a>
+            <a href="#BEANCURDDISHES">BEAN CURD DISHES</a>
+            <a href="#RICEDISHES">RICE DISHES</a>
+            <a href="#NOODLEDISHES">NOODLE DISHES</a>
+            <a href="#OTHERS">OTHERS</a>
             <a href="#SETMENUS">SET MENUS</a>
             </b>
-        </nav>
-        <div style="padding-left:18%">
-        <h1>Silverhill Chinese Takeaway</h1>
-            <p>3 Sedlescombe Road North,<br>
-                St. Leonards-on-Sea,<br>
-                East Sussex,<br>
-                TN37 7DA <font style="color:dodgerblue"><br>
-                <i>(Updated for May 2023)</i></font></p>
-        <hr>
-                To place an order, feel free to come visit us. Or alternatively, please call:<br><strong>01424 718889</strong>
-        <hr>
-                <h4><u>OPENING TIMES</u></h4>
-                <b>Monday:</b> <font style="color:green">4:30pm - 10:00pm</font><br>
-                <b>Tuesday:</b> <font style="color:red">Closed</font><br>
-                <b>Wednesday:</b> <font style="color:green">4:30pm - 10:00pm</font><br>
-                <b>Thursday:</b> <font style="color:green">4:30pm - 10:00pm</font><br>
-                <b>Friday:</b> <font style="color:green">4:30pm - 10:00pm</font><br>
-                <b>Saturday:</b> <font style="color:green">4:30pm - 10:00pm</font><br>
-                <b>Sunday:</b> <font style="color:green">4:30pm - 10:00pm</font><br>
-                (Open on Bank Holidays)<br><br>
-            <hr>
-            <p>
+        </div>
+        
+        
+            <!--<table class="OpeningTimes">
+                <th colspan="2">OPENING TIMES</th>
+                <tr>
+                    <td class="Day">Monday:</td><td class="OpenTime">4:30pm - 10:00pm</td>
+                </tr>
+                <tr>
+                    <td class="Day">Tuesday:</td><td class="CloseTime">~ Closed ~</td>
+                </tr>
+                <tr>
+                    <td class="Day">Wednesday:</td><td class="OpenTime">4:30pm - 10:00pm</td>
+                </tr>
+                <tr>
+                    <td class="Day">Thursday:</td><td class="OpenTime">4:30pm - 10:00pm</td>
+                </tr>
+                <tr>
+                    <td class="Day">Friday:</td><td class="OpenTime">4:30pm - 10:00pm</td>
+                </tr>
+                <tr>
+                    <td class="Day">Saturday:</td><td class="OpenTime">4:30pm - 10:00pm</td>
+                </tr>
+                <tr>
+                    <td class="Day">Sunday:</td><td class="OpenTime">4:30pm - 10:00pm</td>
+                </tr>
+                <tr>
+                <td colspan="2", align="center">(Open on Bank Holidays)</td>
+                </tr>
+            </table>
+        
+        
+        
+        
+            <p align="center">
                 <b><u>FREE DELIVERY SERVICE</u></b><br>
                 For orders OVER &pound;18.00 and within a 3 mile radius<br>
                 <i style="color:dodgerblue">(Orders under &pound;18.00 or outside the 3 mile radius will incur a delivery charge)</i>
-            <p>
+                
+                
+            <p align="center">
                 <b><u>DELIVERY TIMES</u></b><br>
                 5:00pm - 10:00pm
-            </p>
-            <hr>
-            <p>
-                <font style="color:red"> <i class="fa fa-fire"></i></font> = Hot/Spicy<br>
-                <font style="color:green"><i class="fa fa-leaf" aria-hidden="true"></i></font> = Suitable for Vegetarians
-            </p>
-            <hr>
-        <h2><u>Food Menu</u></h2>
-        <form>
-        <h3 id="STARTERS"><font style="color:red">STARTERS</font></h3>
+            </p><hr> -->
+        
+        <img src="https://user-images.githubusercontent.com/111469383/235817052-2915dec1-4084-4224-ab5c-e45405ad7913.jpg" width="100%">
+
+
+        <img src="https://user-images.githubusercontent.com/111469383/235812787-90fce2d1-43ab-4462-9bf6-6a0f287fcd9b.jpg" width="100%">
+        <div id="menu">
+        <hr id="STARTERS">
+                <img src="https://user-images.githubusercontent.com/111469383/235730930-6898a358-174d-4cc5-9438-fe297abce2c5.jpg" width="100%"><br>
+        <hr id="SPARERIBS">
+                <img src="https://user-images.githubusercontent.com/111469383/235734860-ef53d6e6-d7c8-422c-9a99-1ff04870c466.jpg" width="100%">
+        <hr id="SOUPS">
+                <img src="https://user-images.githubusercontent.com/111469383/235735978-39cd22f1-ac44-4a4e-a065-1bae1f54957b.jpg" width="100%">
+        <hr id="KINGPRAWNDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235737026-454a319b-924c-46d7-89bc-c8b67e8d0cb1.jpg" width="100%">
+        <hr id="SQUIDDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235738048-9f0f3629-9278-4c71-9b99-a2b937aa3979.jpg" width="100%">
+        <hr id="DUCKDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235781244-18a94295-e347-43fb-895f-7ea261d5bb23.jpg" width="100%">
+        <hr id="CHICKENDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235782192-d2300516-ff26-4387-b689-cfa0c851e0af.jpg" width="100%">
+        <hr id="BEEFDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235783256-8953e521-a1a8-4047-a463-6337c18afa86.jpg" width="100%">
+        <hr id="LAMBDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235784134-42a71c4e-a535-4ef2-8fe5-fed883c96a07.jpg" width="100%">
+        <hr id="PORKDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235786096-c7242c06-166a-43fe-b67e-89a8a9525043.jpg" width="100%">
+        <hr id="CURRYDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235787518-9061c555-98ea-431a-ab90-065dcee25cdc.jpg" width="100%">
+        <hr id="CHOPSUEYDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235788663-0e69c301-6a21-41ef-af0d-706f5ce8d214.jpg" width="100%">
+        <hr id="FOOYUNGDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235789953-cd5670e8-25ca-429c-84dc-dc0d90ab9205.jpg" width="100%">
+        <hr id="OMELETTE&ENGLISHDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235791455-35ed1b10-5e44-460c-a939-8651bf00d83e.jpg" width="100%">
+        <hr id="VEGETABLEDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235793476-ad653494-e773-48db-8bb8-5a22332539cb.jpg" width="100%">
+        <hr id="BEANCURDDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235795902-cecd074a-77ea-43dd-a6a3-cccc6b5e9963.jpg" width="100%">
+        <hr id="RICEDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235803298-84b8e73b-2ab5-4323-b4be-28de59938ef6.jpg" width="100%">
+        <hr id="NOODLEDISHES">
+                <img src="https://user-images.githubusercontent.com/111469383/235803170-ba55f740-e6b5-47d2-bdc1-d199b850c1a8.jpg" width="100%">
+        <hr id="OTHERS">
+                <img src="https://user-images.githubusercontent.com/111469383/235814702-6f753788-c592-49b6-8d09-19b7498423f1.jpg" width="100%">
+        <hr id="SETMENUS">
+                <img src="https://user-images.githubusercontent.com/111469383/235811634-3e7773b4-6cc9-49d9-86b1-2152f221e6fb.jpg" width="100%">
+                </div>
+                
+                
+        <!--<h3><font style="color:red">STARTERS</font></h3>
             <ol>
-                <li><label for="MixedHD"><b>Mixed Hor's D'oeuvres</b></label>...<font style="color:blue"><b>(&pound;12.00)</b></font><!--<input type="checkbox" id="MixedHD">--><br><font style="color:red"><i> (Spring Rolls, Spare Ribs, Sesame Prawn Toast, Chicken Satay, & Seaweed)</i></font></li><br>
+                <li><b>Mixed Hor's D'oeuvres</b>...<font style="color:blue"><b>(&pound;12.00)</b></font><br><font style="color:red"><i> (Spring Rolls, Spare Ribs, Sesame Prawn Toast, Chicken Satay, & Seaweed)</i></font></li><br>
                 <li><b>Aromatic Crispy Duck</b><br><font style="color:red"><i>(Served with Pancakes, Cucumber, Spring Onion & Hoi Sin Sauce)</i></font></li>
                     <ol type="a">
                         <li><b>Quarter</b>...<font style="color:blue"><b>(&pound;10.50)</b></font></li>
@@ -127,9 +316,9 @@
                 <li><b>Jiu Yim Mussels</b> <font style="color:red"><i>(Salt & Pepper)</i> <i class="fa fa-fire"></i></font>...<font style="color:blue"><b>(&pound;7.00)</b></font></li><br>
                 <li><b>Fried Mussels in Black Bean Sauce</b><font style="color:red"> <i class="fa fa-fire"></i></font>...<font style="color:blue"><b>(&pound;7.00)</b></font></li><br>
                 <li><b>Deep Fried Western Crab Claws</b>...<font style="color:blue"><b>(&pound;5.20)</b></font></li><br>
-                <li><b>Prawn Crackers</b>...<font style="color:blue"><b>(&pound;2.70)</b></font></li><br>
+                <li ID="SPARERIBS"><b>Prawn Crackers</b>...<font style="color:blue"><b>(&pound;2.70)</b></font></li><br>
             </ol><hr>
-        <h3 id="SPARERIBS"><font style="color:red">SPARE RIBS</font></h3>
+        <h3><font style="color:red">SPARE RIBS</font></h3>
             <ol start="24">
                 <li><b>Jiu Yim Spare Ribs</b> <font style="color:red"><i>(Salt & Pepper)</i> <i class="fa fa-fire"></i></font>...<font style="color:blue"><b>(&pound;7.20)</b></font></li><br>
                 <li><b>Barbecued Spare Ribs</b>...<font style="color:blue"><b>(&pound;7.20)</b></font></li><br>
@@ -396,7 +585,7 @@
                     </ul>
             </ol><hr>
         <h3 id="SETMENUS"><font style="color:red", font-weight="bold">SET MENUS</font></h3>
-            <ul type="none">
+            <ul type="none", class="setmenus">
                 <li><b><font style="color:red">A. For 1 Person</font></b>...<font style="color:blue"><b>(&pound;13.00)</b></font></li>
                     <ul type="disc">
                         <li>Sweet & Sour Pork Balls</li>
@@ -462,16 +651,20 @@
                         <li>Beansprouts Chow Mein<font style="color:green"> <i class="fa fa-leaf" aria-hidden="true"></i></font></li>
                         <li>Boiled Rice<font style="color:green"> <i class="fa fa-leaf" aria-hidden="true"></i></font></li>
                     </ul><br>
-            </ul>
-        </form>
+            </ul> -->
         <!--<button>Order now!</button>-->
-        </div>
+            
     <script>
+// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
+// Get the navbar
 var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
